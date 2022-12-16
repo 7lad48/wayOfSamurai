@@ -9,7 +9,7 @@ const Profile = (props) => {
     return (
         <div className={profile.wrapper}>
             <ProfileInfo />
-            <Posts />
+            <Posts profilePosts={props.profilePosts}/>
         </div>
     );
 }
