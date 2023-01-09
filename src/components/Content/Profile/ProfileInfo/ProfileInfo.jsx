@@ -8,7 +8,7 @@ const ProfileInfo = (props) => {
     return (
         <div className={profileInfo.wrapper}>
             <div className={profileInfo.picture}>
-                <img src="https://lh5.googleusercontent.com/Uw6W7dIIPCfYzY0_nBsv0uJ3KMH4_ZSxoczh0dbebwxoa73ELUYRW1TIuXlGK_POWh5maWZ46U8PtsC-iIUET6YhlpH7iWsA8-lD8fhzEyGUej3O6lDmvYcIn5L4z0QvZwHBkNk" alt="profile picture"/>
+                <img src="https://media.istockphoto.com/id/1297349747/photo/hot-air-balloons-flying-over-the-botan-canyon-in-turkey.jpg?b=1&s=170667a&w=0&k=20&c=1oQ2rt0FfJFhOcOgJ8hoaXA5gY4225BA4RdOP1RRBz4=" alt="profile picture"/>
             </div>
             <div className={profileInfo.description}>
                 ava + description

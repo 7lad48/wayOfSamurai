@@ -5,15 +5,22 @@ import Post from "./Post/Post";
 const Posts = (props) => {
 
     let postsItems= props.profilePosts.map( post => <Post message={post.message} likesCount={post.likesCount}/>);
+
+    let newPostElement = React.createRef();
+
+    let addPost = () => {
+        let text = newPostElement.current.value;
+        alert(text);
+    };
     return (
         <div className={posts.wrapper}>
 
             <div className={posts.addRow}>
                 <div>
-                    <textarea name="" id="" cols="70" rows="6"></textarea>
+                    <textarea ref={newPostElement} cols="70" rows="6"></textarea>
                 </div>
                 <div>
-                    <button>Добавить</button>
+                    <button onClick={addPost}>Добавить</button>
                 </div>
             </div>
             <div className={posts.postsWrapper}>
